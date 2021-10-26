@@ -1,0 +1,129 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  line-height: 25px;
+}
+:root {
+  --container-width: 70%;
+  --container-margin: 0px auto;
+  --line-height: 30px;
+  --section-padding: 3rem 0px;
+}
+.main-titles {
+  text-align: center;
+  padding: 20px 0px;
+  color: rgba(0, 0, 128, 0.904);
+}
+.main-titles::after {
+  content: "---";
+  color: rgba(128, 0, 0, 0.952);
+  font-size: 30px;
+}
+.main-titles h2 {
+  font-size: 22px;
+}
+/* ===============NAVBAR==================== */
+.navbar {
+  border-bottom: 1px solid grey;
+}
+.navlinks li a {
+  text-decoration: none;
+  color: #000;
+}
+/* ===============WHY US PAGE =================== */
+.whyus-pg {
+  padding: var(--section-padding);
+}
+.whyus-pg-title {
+  text-align: center;
+  padding-bottom: 25px;
+  font-weight: bold;
+}
+.whyus-pg-container {
+  max-width: var(--container-width);
+  height: 100%;
+  margin: var(--container-margin);
+}
+.whyus-pg-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+.whyus-pg-subtitle {
+  color: #fff;
+  text-align: center;
+}
+.whyus-pg-content1 {
+  background-color: rgba(6, 6, 65, 0.774);
+  padding: 5px;
+  color: #ccc;
+  border-radius: 5px;
+}
+.whyus-pg-content2 {
+  background-color: rgb(131, 12, 12);
+  padding: 5px;
+  color: #ccc;
+  border-radius: 5px;
+}
+.whyus-pg-content3 {
+  background-color: rgb(131, 12, 12);
+  padding: 5px;
+  color: #ccc;
+  border-radius: 5px;
+}
+.whyus-pg-content4 {
+  background-color: rgba(6, 6, 65, 0.911);
+  padding: 5px;
+  color: #ccc;
+  border-radius: 5px;
+}
+.whyus-pg-content5 {
+  background-color: rgba(6, 6, 65, 0.911);
+  padding: 5px;
+  color: #ccc;
+  border-radius: 5px;
+}
+.whyus-pg-content6 {
+  background-color: rgb(131, 12, 12);
+  padding: 5px;
+  color: #ccc;
+  border-radius: 5px;
+}
+/* ===============RESPONSIVENESS WHY US PAGE =================== */
+@media screen and (max-width: 660px) {
+  * {
+    font-size: 18px;
+  }
+  .whyus-pg-container {
+    max-width: 90%;
+    height: 100%;
+    margin: var(--container-margin);
+  }
+  .whyus-pg-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  * {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .footer-container {
+    width: var(--container-width);
+    height: 100%;
+    margin: var(--container-margin);
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}

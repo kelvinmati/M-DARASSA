@@ -1,0 +1,104 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  line-height: 25px;
+}
+:root {
+  --container-width: 70%;
+  --container-margin: 0px auto;
+  --line-height: 30px;
+  --section-padding: 3rem 0px;
+}
+/* ===============NAVBAR==================== */
+.navbar {
+  border-bottom: 1px solid grey;
+}
+.navlinks li a {
+  text-decoration: none;
+  color: #000;
+}
+/* ===============ABOUT PAGE==================== */
+.aboutpg {
+  padding: var(--section-padding);
+}
+.about-pg-container {
+  max-width: var(--container-width);
+  height: 100%;
+  margin: var(--container-margin);
+}
+
+.about-pg-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+.aboutpg-sub-title {
+  color: rgba(0, 0, 128, 0.904);
+  padding: 10px 0;
+}
+.aboutpg-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: scale-down;
+}
+/* ===============RESPONSIVE ABOUT PAGE =================== */
+@media screen and (max-width: 660px) {
+  * {
+    font-size: 25px;
+  }
+  .about-pg-container {
+    max-width: 80%;
+    height: 100%;
+    margin: var(--container-margin);
+  }
+  .about-pg-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .aboutpg-content img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 660px) and (max-width: 768px) {
+  * {
+    font-size: 25px;
+  }
+  .about-pg-container {
+    max-width: 80%;
+    height: 100%;
+    margin: var(--container-margin);
+  }
+  .about-pg-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    align-items: center;
+  }
+  .footer-container {
+    max-width: 80%;
+    margin: var(--container-margin);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  * {
+    font-size: 25px;
+  }
+  .about-pg-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    align-items: center;
+  }
+}

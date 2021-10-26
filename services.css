@@ -1,0 +1,123 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  line-height: 25px;
+}
+:root {
+  --container-width: 70%;
+  --container-margin: 0px auto;
+  --line-height: 30px;
+  --section-padding: 3rem 0px;
+}
+/* ===============NAVBAR==================== */
+.navbar {
+  border-bottom: 1px solid grey;
+}
+.navlinks li a {
+  text-decoration: none;
+  color: #000;
+}
+/* ===============SERVICES PAGE =================== */
+
+.services-pg {
+  padding: var(--section-padding);
+}
+.services-pg-container {
+  max-width: var(--container-width);
+  height: 100%;
+  margin: var(--container-margin);
+}
+.services-pg-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.more-services {
+  padding: 10px;
+}
+.more-services:hover {
+  background-color: rgb(131, 12, 12);
+  color: #fff;
+  border-radius: 10px;
+  transform: scale(1.1);
+  transition: 500ms ease-in-out;
+}
+.services-pg-subtitle {
+  color: rgba(0, 0, 128, 0.904);
+}
+.services-pg-content img {
+  width: 432px;
+  height: 380px;
+}
+.more-services p:hover {
+  color: #ccc;
+}
+/* ===============RESPONSIVENESS SERVICES PAGE =================== */
+@media screen and (max-width: 660px) {
+  * {
+    font-size: 25px;
+  }
+  .services-pg-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .services-pg-content img {
+    width: 100%;
+    height: 100%;
+  }
+  .services-pg-subtitle {
+    color: #fff;
+  }
+  .more-services {
+    background-color: rgb(131, 12, 12);
+    color: #fff;
+    border-radius: 10px;
+    margin: 15px 0px;
+  }
+  .more-services p {
+    color: #ccc;
+  }
+}
+
+/* 432by 380 */
+@media screen and (min-width: 660px) and (max-width: 768px) {
+  * {
+    font-size: 25px;
+  }
+  .services-pg-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .footer-container {
+    width: var(--container-width);
+    margin: var(--container-margin);
+    height: 100%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  * {
+    font-size: 28px;
+  }
+  .services-pg-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .footer-container {
+    width: var(--container-width);
+    margin: var(--container-margin);
+    height: 100%;
+  }
+  .services-pg-content img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}

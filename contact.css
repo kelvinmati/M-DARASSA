@@ -1,0 +1,143 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  line-height: 25px;
+}
+:root {
+  --container-width: 70%;
+  --container-margin: 0px auto;
+  --line-height: 30px;
+  --section-padding: 3rem 0px;
+}
+.main-titles {
+  text-align: center;
+  padding: 20px 0px;
+  color: rgba(0, 0, 128, 0.904);
+}
+.main-titles::after {
+  content: "---";
+  color: rgba(128, 0, 0, 0.952);
+  font-size: 30px;
+}
+.main-titles h2 {
+  font-size: 22px;
+}
+/* ===============NAVBAR==================== */
+.navbar {
+  border-bottom: 1px solid grey;
+}
+.navlinks li a {
+  text-decoration: none;
+  color: #000;
+}
+/* ===============CONTACT PAGE==================== */
+.contact-pg {
+  padding: var(--section-padding);
+}
+.contact-pg-container {
+  width: var(--container-width);
+  height: 100%;
+  margin: var(--container-margin);
+}
+.contact-pg-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+.contact-pg-content img {
+  width: 100%;
+  height: 100%;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    360deg,
+    rgba(223, 19, 19, 0.966),
+    rgba(0, 0, 128, 0.904)
+  );
+}
+.contact-input-fields {
+  margin: 10px 0px;
+  padding: 5px;
+  outline: none;
+}
+.contact-input-fields::placeholder {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.submit-btn {
+  padding: 5px;
+  width: 40%;
+  background-color: rgba(0, 0, 128, 0.904);
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+/* ===============RESPONSIVENESS SERVICES PAGE =================== */
+@media screen and (max-width: 660px) {
+  * {
+    font-size: 18px;
+  }
+  .contact-pg-content {
+    /* width: 300px; */
+  }
+  .contact-pg-container {
+    width: 95%;
+    height: 100%;
+    margin: var(--container-margin);
+  }
+  .contact-pg-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+  .contact-pg-content img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer-container {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 661px) and (max-width: 768px) {
+  .contact-pg-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+  .contact-pg-container {
+    max-width: var(--container-width);
+    height: 100%;
+    margin: var(--container-margin);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  * {
+    font-size: 28px;
+  }
+  .navbar-container {
+    width: 100%;
+    height: 100%;
+    margin: var(--container-margin);
+  }
+  .contact-pg-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+  .contact-pg-container {
+    width: var(--container-width);
+    height: 100%;
+    margin: var(--container-margin);
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
