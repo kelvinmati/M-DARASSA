@@ -17,7 +17,7 @@
 }
 .main-titles::after {
   content: "---";
-  color: rgba(128, 0, 0, 0.952);
+  color: red;
   font-size: 30px;
 }
 .main-titles h2 {
@@ -54,11 +54,7 @@
   flex-direction: column;
   padding: 20px;
   border-radius: 5px;
-  background-image: linear-gradient(
-    360deg,
-    rgba(223, 19, 19, 0.966),
-    rgba(0, 0, 128, 0.904)
-  );
+  background-image: linear-gradient(360deg, red, rgba(0, 0, 128, 0.904));
 }
 .contact-input-fields {
   margin: 10px 0px;
@@ -70,20 +66,24 @@
   letter-spacing: 1px;
 }
 .submit-btn {
-  padding: 5px;
-  width: 40%;
+  padding: 10px;
+  width: 80%;
+  margin: 0px auto;
   background-color: rgba(0, 0, 128, 0.904);
   color: #fff;
   border-radius: 20px;
   cursor: pointer;
+  border: 0;
 }
 /* ===============RESPONSIVENESS SERVICES PAGE =================== */
-@media screen and (max-width: 660px) {
+@media screen and (min-width: 375px) and (max-width: 500px) {
   * {
-    font-size: 18px;
+    font-size: var(---max-width-660-font);
   }
-  .contact-pg-content {
-    /* width: 300px; */
+}
+@media screen and (max-width: 660px) {
+  .contact-pg {
+    padding: 0px;
   }
   .contact-pg-container {
     width: 95%;
@@ -101,11 +101,14 @@
   }
 
   .footer-container {
-    width: 100%;
+    width: 95%;
     height: 100%;
   }
 }
 @media screen and (min-width: 661px) and (max-width: 768px) {
+  .contact-pg {
+    padding: 10px;
+  }
   .contact-pg-grid {
     display: grid;
     gap: 2rem;

@@ -17,7 +17,9 @@
 }
 .main-titles::after {
   content: "---";
-  color: rgba(128, 0, 0, 0.952);
+
+  color: rgba(255, 0, 0, 0.877);
+
   font-size: 30px;
 }
 .main-titles h2 {
@@ -62,13 +64,15 @@
   border-radius: 5px;
 }
 .whyus-pg-content2 {
-  background-color: rgb(131, 12, 12);
+  background-color: rgba(255, 0, 0, 0.877);
+
   padding: 5px;
   color: #ccc;
   border-radius: 5px;
 }
 .whyus-pg-content3 {
-  background-color: rgb(131, 12, 12);
+  background-color: rgba(255, 0, 0, 0.877);
+
   padding: 5px;
   color: #ccc;
   border-radius: 5px;
@@ -86,16 +90,19 @@
   border-radius: 5px;
 }
 .whyus-pg-content6 {
-  background-color: rgb(131, 12, 12);
+  background-color: rgba(255, 0, 0, 0.877);
+
   padding: 5px;
   color: #ccc;
   border-radius: 5px;
 }
 /* ===============RESPONSIVENESS WHY US PAGE =================== */
-@media screen and (max-width: 660px) {
+@media screen and (min-width: 375px) and (max-width: 500px) {
   * {
-    font-size: 18px;
+    font-size: var(---max-width-660-font);
   }
+}
+@media screen and (max-width: 660px) {
   .whyus-pg-container {
     max-width: 90%;
     height: 100%;
@@ -107,17 +114,26 @@
     gap: 2rem;
     align-items: center;
   }
+  .footer-container {
+    width: 90%;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   * {
     font-size: 26px;
     line-height: 30px;
   }
+  .whyus-pg-container {
+    max-width: 80%;
+    height: 100%;
+    margin: var(--container-margin);
+  }
   .footer-container {
-    width: var(--container-width);
+    width: 80%;
     height: 100%;
     margin: var(--container-margin);
     padding: 20px;
+    margin-bottom: 2rem;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
