@@ -630,7 +630,7 @@ html {
 }
 @media screen and (min-width: 768px) and (max-width: 960px) {
   * {
-    font-size: 25px;
+    /* font-size: 25px; */
   }
   .navbar-container {
     width: 95%;
@@ -678,7 +678,7 @@ html {
 }
 @media screen and (min-width: 960px) and (max-width: 1024px) {
   * {
-    font-size: 28px;
+    /* font-size: 28px; */
   }
   .main-titles h2 {
     font-size: var(--section-titles-font);
@@ -728,7 +728,7 @@ html {
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   * {
-    font-size: 20px;
+    /* font-size: 20px; */
   }
   .main-titles h2 {
     font-size: var(--section-titles-font);
