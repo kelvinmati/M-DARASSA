@@ -32,6 +32,9 @@
 .navlinks li a {
   text-decoration: none;
   color: #000;
+
+  
+
 }
 /* ===============WHY US PAGE =================== */
 .whyus-pg {
@@ -41,6 +44,7 @@
   text-align: center;
   padding-bottom: 25px;
   font-weight: bold;
+  color: rgba(0, 0, 128, 0.904);
 }
 .whyus-pg-container {
   max-width: var(--container-width);
@@ -54,10 +58,18 @@
   align-items: center;
 }
 .whyus-pg-subtitle {
-  color: #fff;
+  color: rgba(0, 0, 128, 0.904);
   text-align: center;
+  padding-bottom: 8px;
 }
-.whyus-pg-content1 {
+.whyus-pg-content {
+  box-shadow: rgba(50, 50, 93, 0.1) 0px 0px 0px 0.5px,
+    rgba(51, 51, 71, 0.1) 0px 2px 5px 0px, rgba(0, 0, 0, 0.07) 0px 1px 1.5px 0px;
+  color: #000000;
+  border-radius: 10px;
+  padding: 20px;
+}
+/* .whyus-pg-content1 {
   background-color: rgba(6, 6, 65, 0.774);
   padding: 5px;
   color: #ccc;
@@ -95,7 +107,7 @@
   padding: 5px;
   color: #ccc;
   border-radius: 5px;
-}
+} */
 /* ===============RESPONSIVENESS WHY US PAGE =================== */
 @media screen and (min-width: 375px) and (max-width: 500px) {
   * {
